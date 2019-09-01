@@ -24,6 +24,7 @@ public class Create_community implements CommandUser{
         System.out.println("DIGITE A DESCRIÇÃO DA COMUNIDADE (APERTE ENTER AO FINALIZAR) :");
         aux = main.TryCatch.stringTry();
         comu[qt_comunidades].setDescription(aux);
+        qt_comunidades++;
 
         System.out.println("COMUNIDADE CRIADA COM SUCESSO !!!!");
     }

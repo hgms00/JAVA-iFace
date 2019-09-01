@@ -6,7 +6,7 @@ import java.lang.*;
 public class Texts {
 
     public static void inicial_text() {
-        System.out.println("BEM-VINDOS AO IFACE!!");
+        System.out.println("\nBEM-VINDOS AO IFACE!!");
         System.out.println("======================");
         System.out.println("O QUE VOCÊ DESEJA FAZER?\n");
 
@@ -17,7 +17,7 @@ public class Texts {
 
     public static void using_iface_text()
     {
-         System.out.println("OLÁ ! O QUE VOCÊ DESEJA FAZER? ");
+         System.out.println("\n\nOLÁ ! O QUE VOCÊ DESEJA FAZER? ");
          System.out.println("1 - EDITAR PERFIL");
          System.out.println("2 - ADICIONAR AMIGO");
          System.out.println("3 - ENVIAR MENSAGEM");

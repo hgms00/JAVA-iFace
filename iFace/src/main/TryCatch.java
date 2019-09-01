@@ -53,6 +53,31 @@ public class TryCatch {
         return intTry;
     }
 
+    public static int firstintTry()
+    {
+        int intTry = 0;
+        Scanner input = new Scanner(System.in);
+        boolean flag = false;
+
+        while(!flag) {
+
+            try {
+                intTry=0;
+                flag = true;
+                intTry = input.nextInt();
+                if (intTry < 0 || intTry > 2)
+                    throw new Exception("Fora do intervalo");
+
+            } catch (Exception e) {
+                System.out.println("Por favor, coloque um valor inteiro válido");
+                input.nextLine();
+                flag = false;
+            }
+        }
+
+        return intTry;
+    }
+
     public static String stringTry()
     {
         String stringTry = "";
@@ -112,7 +137,7 @@ public class TryCatch {
                 intTry=0;
                 flag = true;
                 intTry = input.nextInt();
-                if (intTry < 0 || intTry > 7)
+                if (intTry < 0 || intTry > 8)
                     throw new Exception("Fora do intervalo");
 
             } catch (Exception e) {

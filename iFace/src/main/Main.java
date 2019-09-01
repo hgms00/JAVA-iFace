@@ -15,7 +15,7 @@ public class Main{
         while(command!=0)
         {
             Texts.inicial_text();
-           command = input.nextInt();
+           command = main.TryCatch.firstintTry();
            setCommand(command);
 
         }

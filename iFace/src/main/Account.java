@@ -6,11 +6,13 @@ public class Account {
     private String login;
     private String senha;
 
-    public int friends[];
+    public int comunidades[] = new int[1000];
+    public int joined_comu = 0;
+    public int friends[] = new int[1000];
     public int qt_friends = 0;
-    public String message[];
+    public String message[] = new String[1000];
     public int qt_message = 0;
-    public int pedidos[];
+    public int pedidos[] = new int[1000];
     public int qt_pedidos = 0;
 
     //DADOS :
@@ -42,8 +44,8 @@ public class Account {
         return pedidos;
     }
 
-    public void  setPedidos(int[] pedidos) {
-        this.pedidos = pedidos;
+    public void  setPedidos(int i) {
+        this.pedidos[qt_pedidos] = i;
         qt_pedidos++;
     }
 

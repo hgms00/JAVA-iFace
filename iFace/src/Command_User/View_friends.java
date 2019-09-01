@@ -12,13 +12,13 @@ public class View_friends implements CommandUser{
     public void execute()
     {
         int aux;
-        for (int i = 0 ; i < usuarios[User.indice].qt_pedidos;i++)
+        for (int i = 0 ; i < usuarios[User.indice].qt_pedidos-1;i++)
         {
-            System.out.printf("O usuários %s quer lhe adicionar",usuarios[usuarios[User.indice].pedidos[i]].getName());
-            System.out.printf("ACEITAR ?");
+            System.out.printf("O usuários %s quer lhe adicionar\n",usuarios[usuarios[User.indice].pedidos[i]].getName());
+            System.out.printf("ACEITAR ?\n");
 
-            System.out.printf("0 - NÃO");
-            System.out.printf("1 - SIM");
+            System.out.printf("0 - NÃO\n");
+            System.out.printf("1 - SIM\n");
 
             aux = main.TryCatch.booleanintTry();
 

@@ -14,6 +14,7 @@ public class Login implements Command{
 
         System.out.println("Digite seu login:");
         login_try = main.TryCatch.stringTry();
+        int indice = -1;
 
         int i=0;
         for(i=0;i<Add_Account.qt_usuarios && searching==0;i++)
@@ -22,11 +23,12 @@ public class Login implements Command{
             if(login_try.equals(Add_Account.usuarios[i].getLogin()))
             {
                 searching = 1;
+                indice = i;
                 break;
             }
         }
 
-        if(searching==0)
+        if(searching==0 || indice==-1)
         {
             System.out.println("O usuário não existe !!");
             return ;
@@ -37,10 +39,13 @@ public class Login implements Command{
         senha_try = main.TryCatch.stringTry();
 
 
-        if(senha_try.equals(Add_Account.usuarios[i].getSenha()))
+
+
+        if(senha_try.equals(Add_Account.usuarios[indice].getSenha()))
         {
             searching = 1;
         }
+
 
 
         if(searching==0)

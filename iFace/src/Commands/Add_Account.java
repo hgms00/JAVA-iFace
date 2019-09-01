@@ -35,22 +35,22 @@ public class Add_Account implements Command{
         System.out.println("1 - MASCULINO");
         System.out.println("2 - FEMININO");
         System.out.println("3 - OUTRO");
-        //aux = main.TryCatch.intTry();
+        aux = main.TryCatch.intTry();
         usuarios[qt_usuarios].setGenero(aux);
 
         System.out.println("Informe sua idade:");
-        //aux = main.TryCatch.anyIntTry();
+        aux = main.TryCatch.anyIntTry();
         usuarios[qt_usuarios].setIdade(aux);
 
         System.out.println("Informe sua cidade");
-        //senha = main.TryCatch.stringTry();
+        senha = main.TryCatch.stringTry();
         usuarios[qt_usuarios].setCidade(senha);
 
         System.out.println("Relacionamento:");
         System.out.println("1 - SOLTEIRO");
         System.out.println("2 - CASADO");
         System.out.println("3 - OUTRO");
-        //aux = main.TryCatch.intTry();
+        aux = main.TryCatch.intTry();
         usuarios[qt_usuarios].setRelacionamento(aux);
 
 

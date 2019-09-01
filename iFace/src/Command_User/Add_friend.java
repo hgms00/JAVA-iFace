@@ -28,7 +28,11 @@ public class Add_friend implements CommandUser{
             }
         }
 
-        usuarios[i].pedidos[usuarios[i].qt_pedidos]  = User.indice;
+        System.out.println(i);
+        System.out.println(usuarios[i].qt_pedidos);
+        System.out.println(User.indice);
+
+        usuarios[i].setPedidos(User.indice);
         usuarios[i].qt_pedidos++;
         System.out.println("PEDIDO DE AMIZADE ENVIADO");
     }

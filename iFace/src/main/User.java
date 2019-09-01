@@ -20,14 +20,14 @@ public class User {
             setCommandUser(command);
 
             if(command==0)
-                indice = -1;
+                break;
 
             if(usuarios[indice]==null)
             {
                 System.out.println("Essa conta nao existe mais!");
                 command = 0 ;
+                break;
             }
-
         }
     }
 }

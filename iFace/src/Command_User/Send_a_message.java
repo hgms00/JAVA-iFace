@@ -30,9 +30,14 @@ public class Send_a_message implements CommandUser{
         System.out.println("DIGITE A MENSAGEM ABAIXO (PRESSIONE ENTER QUANDO FINALIZAR): ");
 
         search = input.nextLine();
-
-        usuarios[i].message[usuarios[i].qt_message] = search;
+        
+        
+         if(usuarios[i]!=null){
+         usuarios[i].message[usuarios[i].qt_message] = search;
         usuarios[i].qt_message++;
+         }
+        
+        System.out.println("MENSAGEM ENVIADA COM SUCESSO");
 
     }
 }

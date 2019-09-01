@@ -18,7 +18,7 @@ public class SetCommandUser {
             slot = new Join_community();
         else if(Command==6)
             slot = new View_profile();
-        else if(Command==6)
+        else if(Command==7)
             slot = new Remove_account();
         else if(Command==8)
             slot = new View_friends();
